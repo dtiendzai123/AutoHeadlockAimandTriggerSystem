@@ -322,7 +322,12 @@ const headConfig = {
     "modifyNameEnabled": 0
   }
 };
+const GamePackages = {
+  GamePackage1: "com.dts.freefireth",
+  GamePackage2: "com.dts.freefiremax"
+};
 
+// ===
 
 const boneHeadPosition = { x: -0.0457, y: -0.00447, z: -0.02004 };
 const boneHeadRotation = { x: 0.0258, y: -0.0861, z: -0.1402, w: 0.9860 };
