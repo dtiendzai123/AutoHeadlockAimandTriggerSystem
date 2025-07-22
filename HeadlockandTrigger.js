@@ -345,4 +345,4 @@ autoAim.addTarget(headConfig, boneHeadPosition, bindpose, boneHeadRotation, bone
 setInterval(() => {
   autoAim.setFire(true); // nếu giữ chuột
   autoAim.update();
-}, 16);
+}, 8);
