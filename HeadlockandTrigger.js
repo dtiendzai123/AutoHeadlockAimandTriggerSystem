@@ -17,7 +17,7 @@ class CameraController {
   constructor() {
     this.position = new Vector3(0, 1.6, -2);
     this.rotation = { x: 0, y: 0 }; // pitch (x), yaw (y)
-    this.smoothing = 0.22;
+    this.smoothing = 0.001;
   }
 
   getPosition() { return this.position; }
