@@ -1,3 +1,7 @@
+let body = $response.body;
+
+// Nếu là JSON thì parse thử
+try { body = JSON.parse($response.body); } catch (e) {}
 // === Enhanced Vector3 Utility Class ===
 class Vector3 {
     constructor(x = 0, y = 0, z = 0) { 
@@ -961,3 +965,8 @@ autoAim.addTarget(
 setInterval(() => {
   autoAim.update(1 / 120); // 60 FPS
 }, 8);
+if (typeof body === "object") {
+  $done({ body: JSON.stringify(body) });
+} else {
+  $done({ body });
+}
